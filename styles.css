@@ -1,0 +1,87 @@
+/*Fonte das palavras*/
+:root {
+    font-family: sans-serif;
+    --color-blue: #0085ff;
+    --color-red: #ff4f4f;
+    --color-orange: #ff7d1b;
+}
+
+body {
+    margin: 0%;
+}
+
+/*Titulo*/
+h1 {
+    margin: 0;
+    text-shadow: 0 4px 4px #0004;
+    width: 15ch;
+}
+
+/*Cabeçalho*/
+.header {
+    height: 50vh;
+    background: linear-gradient(to right bottom, var(--color-red), var(--color-orange));
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 4px #0004;
+    text-align: center;
+}
+
+
+/*Section*/
+.profile {
+    position: relative;
+    top: -75px;
+    text-align: center;
+}
+
+
+/*Foto da pessoa*/
+.profile__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 4px #0004;
+}
+
+/*Paragrafo*/
+.profile__copy {
+    margin: 32px auto;
+    max-width: 75ch;
+    font-style: italic; 
+}
+
+/*Icones*/
+.profile__social, 
+.footer__Social {  
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+    list-style: none;
+    color: var(--color-blue);
+}
+
+/*Rodape da pagina*/
+.footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 16px;
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+/*Icones do rodape*/
+.footer__Social {
+    margin: 0;
+    justify-self: end;
+}
